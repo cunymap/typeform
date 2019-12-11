@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Typeform</title>
+
+	<!-- Bootstrap for percentage bar -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+	<!-- Direct access to Font Awesome icons -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Load materializecss -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+	<link href="assets/css/animate.css" rel="stylesheet" media="screen">
+
+	<style>
+	html {
+  scroll-behavior: smooth;
+}
+
+		/*when hovering an item:*/
+		.autocomplete-items div:hover {
+		  background-color: DodgerBlue;
+		}
+
+		/*when navigating through the items using the arrow keys:*/
+		.autocomplete-active {
+		  background-color: DodgerBlue !important;
+		  color: #ffffff;
+		}
+	</style>
+
+</head>
+<body>
+	<!-- Navigation start -->
+	<!-- Navigation end -->
+
+
+	<!-- Section 1 Start -->
+	<section id="section1" class="pfblock pfblock-gray formAll" >
+		<div class="container">
+			<div class="row">
+				<!-- FA icon -->
+				<div class="col s12 m12 l4 ">
+							<span class="icon major style1 fa-user"></span>
+				</div>
+
+				<!-- Input -->
+				<div class="col s12 m12 l6 text-left"><br><br>
+					<form autocomplete="off" onsubmit="return (validateCampus());">
+					  <div class="autocomplete" style="width:400px;">
+								<input id="myInput1" type="text" placeholder="i.e. Baruch College" autofocus="autofocus">
+					  </div>
+					</form>
+
+					<label ><div class="question">Enter Your Campus</div></label>
+				</div>
+
+				<!--Progress Bar -->
+			<div class="col s12 m12 l12"><br><br>
+			<div class="progress" style="height: 18px;">
+				<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%" >25%</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section 1 end -->
+
+	<!-- Section 2 Start -->
+	<section id="section2" class="pfblock pfblock-gray formAll" >
+		<div class="container">
+			<div class="row">
+				<!-- FA icon -->
+				<div class="col s12 m12 l4 ">
+							<span class="icon major style1 fa-user"></span>
+				</div>
+
+				<!-- Input -->
+				<div class="col s12 m12 l6 text-left"><br><br>
+					<form autocomplete="off" onsubmit="return (validateMajor());" >
+					  <div class="autocomplete" style="width:400px;">
+								<input id="myInput2" type="text" placeholder="i.e. Computer Science" autofocus="autofocus">
+					  </div>
+					</form>
+
+					<label ><div class="question">Enter Your Major</div></label>
+				</div>
+
+				<!--Progress Bar -->
+			<div class="col s12 m12 l12"><br><br>
+			<div class="progress" style="height: 18px;">
+				<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" >50%</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section 2 end -->
+
+	<!-- Section 3 Start -->
+	<section id="section3" class="pfblock pfblock-gray formAll" >
+		<div class="container">
+			<div class="row">
+				<!-- FA icon -->
+				<div class="col s12 m12 l4 ">
+							<span class="icon major style1 fa-user"></span>
+				</div>
+
+				<!-- Input -->
+				<div class="col s12 m12 l6 text-left"><br><br>
+					<form autocomplete="off" onsubmit="return (validateTerm());" >
+					  <div class="autocomplete" style="width:400px;">
+								<input id="myInput3" type="text" placeholder="i.e. Spring 2020" autofocus="autofocus">
+					  </div>
+					</form>
+
+					<label ><div class="question">Enter Your Start Date</div></label>
+				</div>
+
+				<!--Progress Bar -->
+			<div class="col s12 m12 l12"><br><br>
+			<div class="progress" style="height: 18px;">
+				<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%" >75%</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section 3 end -->
+
+	<!-- Section 4 start-->
+	<section id="section4">
+		<!-- RESULTS neeed css and elements-->
+		<h1>Results here</h1>
+	</section>
+	<!-- section 4 end -->
+
+	<!-- Footer here -->
+	<script src="assets/main.js"> </script>
+</body>
+</html>
